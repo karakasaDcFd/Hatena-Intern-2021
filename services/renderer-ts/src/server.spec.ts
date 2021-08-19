@@ -7,6 +7,6 @@ describe("handleRender", () => {
     req.setSrc("## Title\nfoo");
     const ctx = new Map<string, unknown>();
     const reply = await handleRender(req, ctx);
-    expect(reply.getHtml()).toBe('<h2>Title</h2>\n<p>foo</p>');
+    expect(reply.getHtml()).toBe("<h2>Title</h2>\n<p>foo</p>");
   });
 });

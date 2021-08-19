@@ -4,7 +4,7 @@ describe("Headers syntax", () => {
   it("Markdownの見出し記法が使える", async () => {
     const src = "## Title";
     const html = await render(src);
-    expect(html).toBe('<h2>Title</h2>');
+    expect(html).toBe("<h2>Title</h2>");
   });
 });
 
@@ -16,7 +16,7 @@ const listAns = `<ul>
 </ul>
 </li>
 <li>List2</li>
-</ul>`
+</ul>`;
 
 describe("Lists syntax", () => {
   it("Markdownのリスト記法が使える", async () => {
